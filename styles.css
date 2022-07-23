@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Roboto Mono';
+}
+
+body {
+  margin: 0;
+  background-color: #FFD845;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.navigation_buttons {
+  width: 85%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_button {
+  width: 15rem;
+  height: 3.5rem;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  text-align: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.nav_button_btn {
+  width: 12rem;
+}
+
+select,
+input::placeholder,
+.button_text {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  font-family: "Roboto Mono";
+  outline: none !important;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+input {
+  width: 70%;
+  height: 100%;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  border: none;
+  outline: none !important;
+  padding: 0.6rem !important;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ico_dropdown {
+  color: #159861;
+}
+
+i {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.fa-heart {
+  color: #159861;
+  font-weight: 900;
+  font-size: 1.6rem;
+  padding-top: 5px;
+}
+
+.site_logo {
+  position: relative;
+}
+
+.cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.card {
+  width: 18.3rem;
+  height: 26rem;
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 1.2rem;
+}
+
+.card-header {
+  padding: 3rem 0;
+  border-bottom: 2px solid #000000;
+}
+
+.card_desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 1.8rem .2rem;
+  text-align: start;
+}
+
+.pokemons_word {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.pokemons_category {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.card_weight {
+  display: flex;
+  gap: 1.7rem;
+  padding: 1.6rem 2.2rem;
+}
