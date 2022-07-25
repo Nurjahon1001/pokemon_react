@@ -4,8 +4,6 @@ const cardImg = "./images/004 1.png";
 
 const root = ReactDOM.createRoot(rootElement);
 
-
-
 const siteLogo = React.createElement("div", { className: "site_logo" }, [
   React.createElement("a", { className: "logo" }, [
     React.createElement("img", {
@@ -51,252 +49,54 @@ const navigation = React.createElement(
   ]
 );
 
-const cardsWrapper = React.createElement("div", { className: "cards_wrapper" }, [
-   React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
+function createCard() {
+  return React.createElement("div", { className: "card" }, [
+    React.createElement("div", { className: "card-header" }, [
+      React.createElement("img", {
+        className: "card_img",
+        src: cardImg,
+        alt: "pokemon",
+      }),
+    ]),
+    React.createElement("div", { className: "card-body" }, [
+      React.createElement("div", { className: "card_desc" }, [
+        React.createElement("div", { className: "card_desc_text" }, [
+          React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
+          React.createElement(
+            "p",
+            { className: "pokemons_category" },
+            "Grass, Poison"
+          ),
+        ]),
+        React.createElement("i", { className: "fa-regular fa-heart" }),
       ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
+      React.createElement("div", { className: "card_weight" }, [
+        React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
+        React.createElement("p", { className: "pokemons_word" }, "99 age"),
       ]),
     ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-    React.createElement("div", { className: "card" }, [
-      React.createElement("div", { className: "card-header" }, [
-        React.createElement("img", {
-          className: "card_img",
-          src: cardImg,
-          alt: "pokemon",
-        }),
-      ]),
-      React.createElement("div", { className: "card-body" }, [
-        React.createElement("div", { className: "card_desc" }, [
-          React.createElement("div", { className: "card_desc_text" }, [
-            React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-            React.createElement(
-              "p",
-              { className: "pokemons_category" },
-              "Grass, Poison"
-            ),
-          ]),
-          React.createElement("i", { className: "fa-regular fa-heart" }),
-        ]),
-        React.createElement("div", { className: "card_weight" }, [
-          React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-          React.createElement("p", { className: "pokemons_word" }, "99 age"),
-        ]),
-      ]),
-    ]),
-]);
+  ]);
+}
 
-// function createCard() {
-//   return React.createElement("div", { className: "card" }, [
-//     React.createElement("div", { className: "card-header" }, [
-//       React.createElement("img", {
-//         className: "card_img",
-//         src: cardImg,
-//         alt: "pokemon",
-//       }),
-//     ]),
-//     React.createElement("div", { className: "card-body" }, [
-//       React.createElement("div", { className: "card_desc" }, [
-//         React.createElement("div", { className: "card_desc_text" }, [
-//           React.createElement("p", { className: "pokemons_word" }, "Pokemons"),
-//           React.createElement(
-//             "p",
-//             { className: "pokemons_category" },
-//             "Grass, Poison"
-//           ),
-//         ]),
-//         React.createElement("i", { className: "fa-regular fa-heart" }),
-//       ]),
-//       React.createElement("div", { className: "card_weight" }, [
-//         React.createElement("p", { className: "pokemons_word" }, "6.9kg"),
-//         React.createElement("p", { className: "pokemons_word" }, "99 age"),
-//       ]),
-//     ]),
-//   ]);
-// }
-
-// createCard();
+const cardsWrapper = React.createElement(
+  "div",
+  { className: "cards_wrapper" },
+  [
+    createCard(),
+    createCard(),
+    createCard(),
+    createCard(),
+    createCard(),
+    createCard(),
+    createCard(),
+    createCard(),
+  ]
+);
 
 const wrapper = React.createElement("div", { className: "wrapper" }, [
-   siteLogo,
-   navigation,
-   cardsWrapper,
- ]);
- 
+  siteLogo,
+  navigation,
+  cardsWrapper,
+]);
+
 root.render(wrapper);
